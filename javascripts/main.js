@@ -1,1 +1,7 @@
-console.log('This would be the main JS file.');
+$(function(){
+	$("#sidebar a").on("click",function(){
+		var con=$(this).data("con");
+		$("#main-content").load(con+".html")
+	})
+})
+
